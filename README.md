@@ -143,7 +143,7 @@ Verified connectivity inside the VM
 
 This simulates tasks commonly performed by IT support technicians working in cloud environments.
 
-# Skills Demonstrated
+## Skills Demonstrated
 
 Cloud Administration
 Virtual Networking
