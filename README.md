@@ -5,8 +5,11 @@ The goal is to simulate a small IT infrastructure that a help desk or junior sys
 
 ## Lab Objectives
 Create and organize resources using Resource Groups
+
 Configure a Virtual Network for cloud connectivity
-Deploy a Virtual Machine
+
+Deploy 2 Virtual Machines
+
 Verify the environment is working correctly
 
 ---
@@ -15,34 +18,39 @@ Verify the environment is working correctly
 
 A Resource Group helps organize and manage all related resources in Azure.
 
-Sign in to the Azure Portal
-Search for Resource Groups
-Click Create
-Configure:
+1. Sign in to the Azure Portal
+2. Go to Resource Groups
+3. Click Create
+4. Configure:
 Subscription: Your Azure subscription
-Resource Group Name: IT-Support-Lab
-Region: Choose a nearby region
-Click Review + Create
-Click Create
 
-📸 Screenshot suggestion for GitHub:
+- Resource Group Name: TensLabs
+- Region: Choose a nearby region
+   - Canada Central 
+5. Click Review + Create
+6. Click Create
+
+<img width="281" height="137" alt="resourcegroupcreation" src="https://github.com/user-attachments/assets/02d8776b-db81-454b-ab02-117e3e822460" />
+
 Resource Group successfully created.
 
 ---
 
 ### Step 2: Create a Virtual Network
 
-Next, we create a Virtual Network (VNet) to allow resources to communicate.
+Next, I created a Virtual Network (VN) to allow resources, my two virtual machines, to communicate.
 
-In the Azure Portal search for Virtual Networks
-Click Create
-Configure the following:
+1. Go to Virtual Networks
+2. Click Create
+3. Configure the following:
 
-Basics
 
-Resource Group: IT-Support-Lab
-Virtual Network Name: IT-Lab-VNet
+Resource Group: TensLabs
+Virtual Network Name: Teni-VNet
+
 Region: Same region as the resource group
+  - Canada Central 
+   
 
 IP Addressing
 
