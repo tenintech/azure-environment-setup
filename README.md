@@ -190,21 +190,6 @@ This confirms the Virtual Network is configured correctly.
 
 Command Prompt showing the VM IP address.
 
-## Lab Results
+## What I Learned 
 
-In this lab I successfully:
-
-Built a cloud environment
-Configured Azure networking
-Deployed and connected to a virtual machine
-Verified connectivity inside the VM
-
-This simulates tasks commonly performed by IT support technicians working in cloud environments.
-
-## Skills Demonstrated
-
-Cloud Administration
-Virtual Networking
-VM Deployment
-Remote Desktop Troubleshooting
-Azure Resource Management
+I verified communication between systems using tools like RDP and SSH and observed how different operating systems handle remote access. I learned that Windows VMs are easier to connect to with a graphical interface by default, while Linux typically requires SSH and additional configuration (such as installing xRDP and a desktop environment) to enable GUI access. This exercise helped me better understand Azure networking, inbound port rules, and real-world troubleshooting when remote connections do not work as expected.
