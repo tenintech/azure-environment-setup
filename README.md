@@ -182,7 +182,7 @@ ipconfig
 
 Checked for IP address from the subnet:
 
-10.0.1.4
+10.0.0.4
 
 This confirms the Virtual Network is configured correctly.
 
