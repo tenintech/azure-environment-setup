@@ -18,7 +18,8 @@ Verify the environment is working correctly
 
 Microsoft Azure 
 Microsoft Windows 10 Enterprise, version 22H2 - x64 Gen2
-Ubuntu 
+Remote Desktop Connection (RDP)
+Windows Command Prompt (CMD)
 
 
 ### Step 1: Create a Resource Group
@@ -158,7 +159,7 @@ Remote Desktop connected to the VM.
 
 
 
-Step 5: Verify Network Configuration
+### Step 5: Verify Network Configuration
 
 Inside the VM, confirm network connectivity.
 
