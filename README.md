@@ -14,6 +14,12 @@ Verify the environment is working correctly
 
 ---
 
+## Enviornments Used 
+
+Microsoft Windows 10 Enterprise, version 22H2 - x64 Gen2
+Ubuntu 
+
+
 ### Step 1: Create a Resource Group
 
 A Resource Group helps organize and manage all related resources in Azure.
@@ -22,7 +28,7 @@ A Resource Group helps organize and manage all related resources in Azure.
 2. Go to Resource Groups
 3. Click Create
 4. Configure:
-Subscription: Your Azure subscription
+- Subscription: Your Azure subscription
 
 - Resource Group Name: TensLabs
 - Region: Choose a nearby region
@@ -46,22 +52,17 @@ Next, I created a Virtual Network (VN) to allow resources, my two virtual machin
 
 
 Resource Group: TensLabs
-Virtual Network Name: Teni-VNet
+  - Virtual Network Name: Teni-VNet
 
 Region: Same region as the resource group
   - Canada Central 
    
-
 IP Addressing
 
-Address Space: 10.0.0.0/16
+  - Address Space: 10.0.0.0/16
 
-Subnet
-
-Subnet Name: IT-Subnet
-Subnet Range: 10.0.1.0/24
-Click Review + Create
-Click Create
+4. Click Review + Create
+5. Click Create
 
 <img width="845" height="377" alt="vnoverview" src="https://github.com/user-attachments/assets/fed36855-e48e-4b67-ac5b-98397fd12cde" />
 
@@ -69,45 +70,75 @@ Virtual Network overview page.
 
 ---
 
-### Step 3: Deploy a Virtual Machine
+### Step 3: Deploy Virtual Machines
 
-Now we create a virtual machine that will act as a workstation or server.
+Create a virtual machine that will act as a workstation or server.
 
-Search for Virtual Machines
-Click Create → Azure Virtual Machine
 
-Configure:
+1. Go to Virtual Machines
+    - Click Create → Azure Virtual Machine
 
-Basics
+2. Configure:
 
-Resource Group: IT-Support-Lab
-Virtual Machine Name: IT-Lab-VM
-Region: Same as previous steps
-Image: Windows 10 or Windows Server
-Size: Choose a free-tier eligible size if available
 
-Administrator Account
+- Resource Group: TensLabs
+- Virtual Network: Teni-VNet 
+- Virtual Machine Name: Windows10VM
 
-Username: labadmin
-Password: Create a secure password
+- Region: Canada Central 
 
-Networking
+- Image: Windows 10 Enterprise
 
-Virtual Network: IT-Lab-VNet
-Subnet: IT-Subnet
-Public IP: Enabled
-Click Review + Create
-Click Create
+- Size: Standard D2s v3 (2 vcpus, 8 GiB memory)
 
-📸 Screenshot suggestion:
+
+
+
+**Administrator Account** 
+
+ Create Username and Password
+
+ - Username: Admin10
+
+
+
+
+<img width="477" height="256" alt="deploymentvm" src="https://github.com/user-attachments/assets/1a2afc2a-c4fe-4662-9ae6-3c4e71518e06" />
+<img width="491" height="334" alt="vmdeployed" src="https://github.com/user-attachments/assets/a49f043f-13a8-4297-be47-bd767e580901" />
+
 VM deployment in progress.
+
+
+
+### Create a second virtual machine that will act as another user on the network. 
+
+Configure: 
+- Resource Group: TensLabs
+- Virtual Network: Teni-VNet 
+- Virtual Machine Name: LinuxVM
+
+- Region: Canada Central 
+
+- Image: Linux (ubuntu 24.04)
+
+- Size: Standard D2s v3 (2 vcpus, 8 GiB memory)
+
+
+<b>User Account</b> 
+
+  Create Username and Password 
+
+  - Username: Linuxuser
+
+<img width="232" height="98" alt="Linuxdeploymentcomplete" src="https://github.com/user-attachments/assets/384e097a-82dc-472d-b9ce-6d32b4fda21c" />
+<img width="532" height="311" alt="linuxvmdeployed" src="https://github.com/user-attachments/assets/353443d4-f873-450e-b62f-84be001ae0db" />
 
 
 ---
 
 ### Step 4: Connect to the Virtual Machine
 
-Once deployment is complete, we test connectivity.
+Once deployment is complete I tested connectivity using Windows Remote Desktop Connection.
 
 Open the Virtual Machine
 Click Connect
