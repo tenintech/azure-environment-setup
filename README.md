@@ -158,22 +158,36 @@ This confirms the VM is working properly.
 Remote Desktop connected to the VM.
 
 
+<b>Verify connection of LinuxVM using Powershell</b>
+
+1. Opened PowerShell 
+
+Run:
+
+  - ssh <Linuxuser>@<130.107.145.240>
+
+    Secure Shell (SSH) works and VM is visible from my computer. 
+<img width="599" height="282" alt="linuxpowershell1" src="https://github.com/user-attachments/assets/dc7c517a-4bbf-498b-8fb6-021fc0651359" />
+
+<img width="588" height="71" alt="linuxinpowershell" src="https://github.com/user-attachments/assets/9b3d57d8-da17-4d83-98c7-d63ef93095a7" />
+
 
 ### Step 5: Verify Network Configuration
 
-Inside the VM, confirm network connectivity.
+Inside the VM, I confirmed network connectivity.
 
-Open Command Prompt
+1. Open Command Prompt
 Run:
 ipconfig
 
-You should see an IP address from the subnet:
+Checked for IP address from the subnet:
 
-10.0.1.x
+10.0.1.4
 
 This confirms the Virtual Network is configured correctly.
 
-📸 Screenshot suggestion:
+<img width="494" height="272" alt="network connected " src="https://github.com/user-attachments/assets/1cffbba9-3403-4418-aa2c-a36245848122" />
+
 Command Prompt showing the VM IP address.
 
 ## Lab Results
