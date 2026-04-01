@@ -1,4 +1,4 @@
-# Azure Virtual Network Setup Lab
+# Azure Virtual Network Setup Lab 💻🛜🖥️
 
 This lab demonstrates how to build a basic cloud environment using Microsoft Azure.
 The goal is to simulate a small IT infrastructure that a help desk or junior system administrator might support.
@@ -16,6 +16,7 @@ Verify the environment is working correctly
 
 ## Enviornments Used 
 
+Microsoft Azure 
 Microsoft Windows 10 Enterprise, version 22H2 - x64 Gen2
 Ubuntu 
 
@@ -138,22 +139,24 @@ Configure:
 
 ### Step 4: Connect to the Virtual Machine
 
-Once deployment is complete I tested connectivity using Windows Remote Desktop Connection.
+Once deployment was complete, I tested connectivity using Windows Remote Desktop Connection.
 
-Open the Virtual Machine
-Click Connect
-Select RDP
-Download the RDP file
-Open the file and log in using:
-Username: labadmin
-Password: (your password)
+1. Open the Virtual Machine
+2. Click Connect
+3. Select RDP
+4. Download the RDP file
+5. Open the file and log in using:
+  - Username: Admin10
+  - Password: (your password)
 
 This confirms the VM is working properly.
 
-📸 Screenshot suggestion (Important):
+<img width="951" height="500" alt="windowsvmconnection" src="https://github.com/user-attachments/assets/7193c40b-581d-49a2-a94b-11bea9354be6" />
+
+
 Remote Desktop connected to the VM.
 
-This is the screenshot that proves the lab worked.
+
 
 Step 5: Verify Network Configuration
 
