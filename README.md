@@ -18,8 +18,11 @@ Verify the environment is working correctly
 ## Enviornments Used 
 
 Microsoft Azure 
+
 Microsoft Windows 10 Enterprise, version 22H2 - x64 Gen2
+
 Remote Desktop Connection (RDP)
+
 Windows Command Prompt (CMD)
 
 
